@@ -62,5 +62,7 @@ Three layers:
     |-- tests/             host-side tests
     `-- docs/              documentation
 
-Related project: sim800-at-deltas — per-module hardware/AT differences.
+## Related Project
+
+- [sim800-at-deltas](https://github.com/AliNazarvand/sim800-at-deltas) — per-module hardware and AT differences for the same module family.
 
