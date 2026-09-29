@@ -61,3 +61,6 @@ Three layers:
     |-- tools/             generate / validate scripts
     |-- tests/             host-side tests
     `-- docs/              documentation
+
+Related project: sim800-at-deltas — per-module hardware/AT differences.
+
