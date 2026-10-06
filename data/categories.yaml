@@ -1,0 +1,51 @@
+- id: V25TER
+  label: "V.25TER"
+  manual_chapter: 2
+- id: 3GPP_27007
+  label: "3GPP TS 27.007"
+  manual_chapter: 3
+- id: 3GPP_27005
+  label: "3GPP TS 27.005"
+  manual_chapter: 4
+- id: STK
+  label: "SIM Application Toolkit"
+  manual_chapter: 5
+- id: SIMCom
+  label: "SIMCom Special"
+  manual_chapter: 6
+- id: GPRS
+  label: "GPRS Support"
+  manual_chapter: 7
+- id: TCPIP
+  label: "TCPIP Application Toolkit"
+  manual_chapter: 8
+- id: IP
+  label: "IP Application"
+  manual_chapter: 9
+- id: PING
+  label: "PING Support"
+  manual_chapter: 10
+- id: HTTP
+  label: "HTTP Application"
+  manual_chapter: 11
+- id: FTP
+  label: "FTP Application"
+  manual_chapter: 12
+- id: GSM_Location
+  label: "GSM Location Application"
+  manual_chapter: 13
+- id: Email
+  label: "Email Application"
+  manual_chapter: 14
+- id: MMS
+  label: "MMS Application"
+  manual_chapter: 15
+- id: DDET
+  label: "DDET Application"
+  manual_chapter: 16
+- id: RECORD
+  label: "RECORD Application"
+  manual_chapter: 17
+- id: TTS
+  label: "TTS Application"
+  manual_chapter: 18

@@ -1,0 +1,7 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+includedir=${prefix}/include
+
+Name: sim800_at
+Description: SIM800 Series AT Command & URC Database (header-only C++17)
+Version: @PROJECT_VERSION@
+Cflags: -I${includedir}

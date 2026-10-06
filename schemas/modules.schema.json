@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SIM800 modules.yaml",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "display_name", "hw_ref"],
+    "additionalProperties": false,
+    "properties": {
+      "name":         { "type": "string", "minLength": 1 },
+      "display_name": { "type": "string", "minLength": 1 },
+      "hw_ref":       { "type": "string", "minLength": 1 }
+    }
+  }
+}

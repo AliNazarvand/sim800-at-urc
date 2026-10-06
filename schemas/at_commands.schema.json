@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SIM800 at_commands.yaml",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "category", "description", "manual_ref", "source_ref"],
+    "additionalProperties": false,
+    "properties": {
+      "name":        { "type": "string", "minLength": 1 },
+      "category":    { "type": "string", "minLength": 1 },
+      "description": { "type": "string", "minLength": 1 },
+      "manual_ref":  { "type": "string", "pattern": "^V1\\.(01|10|12) §[\\d\\.]+(; V1\\.(01|10|12) §[\\d\\.]+)*$" },
+      "source_ref":  { "type": "string", "pattern": "^V1\\.(01|10|12)(\\+V1\\.(01|10|12))*$" },
+      "version_notes": { "type": "string" },
+      "all_modules": { "type": "boolean" },
+      "supported_on": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string", "minLength": 1 }
+      },
+      "removed_after": {
+        "type": "string",
+        "enum": ["V1.01", "V1.02", "V1.10", "V1.12"]
+      },
+      "parameters": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "type", "values_or_range"],
+          "additionalProperties": false,
+          "properties": {
+            "name":            { "type": "string", "minLength": 1 },
+            "type":            { "enum": ["string", "int", "bool", "enum"] },
+            "values_or_range": { "type": "string" }
+          }
+        }
+      },
+      "responses": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "related_urcs": {
+        "type": "array",
+        "items": { "type": "string", "minLength": 1 }
+      }
+    },
+    "oneOf": [
+      { "required": ["all_modules"] },
+      { "required": ["supported_on"] },
+      { "required": ["removed_after"] }
+    ]
+  }
+}
